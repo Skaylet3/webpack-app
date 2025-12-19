@@ -1,0 +1,23 @@
+$black-color: black;
+$white-color: white;
+
+.button {
+  background-color: $black-color;
+  color: $white-color;
+
+  span {
+    color: red;
+    font-size: 32px;
+  }
+}
+
+.centered {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.gapped {
+  gap: 12px;
+}

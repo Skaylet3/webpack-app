@@ -1,14 +1,14 @@
 import React, { useState } from 'react';
-import './index.scss';
+import styles from './App.module.scss';
 
 export function App() {
   const [count, setCount] = useState(0);
 
   return (
-    <div className='centered gapped'>
+    <div className={styles.centered}>
       <h1>Counter: {count}</h1>
-      <button className='button' onClick={() => setCount(count + 1)}><span>+</span></button>
-      <button className='button' onClick={() => setCount(count - 1)}><span>-</span></button>
+      <button className={styles.button} onClick={() => setCount(count + 1)}><span>+</span></button>
+      <button className={styles.button} onClick={() => setCount(count - 1)}><span>-</span></button>
     </div>
   );
 }

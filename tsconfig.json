@@ -14,8 +14,10 @@
     "esModuleInterop": true,
   },
   "ts-node": {
-
+    "compilerOptions": {
+     "module": "CommonJS"
+   }
   },
-  "include": ["src/**/*"],
+  "include": ["src/**/*", "config/**/*", "webpack.config.ts"],
   "exclude": ["node_modules"]
 }
